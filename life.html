@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Conway's Game of Life</title>
+	<link rel="stylesheet" href="css/life.css">
+	<script src="lib/life.js"></script>
+</head>
+<body>
+	<div id="game">
+		<canvas id="life"></canvas><br>
+		<strong>Generation:</strong> <span id="generation">1</span><br>
+		<button onclick="life.reset()">Reset</button>
+		<button onclick="life.toggle_pause()" id="pause">Pause</button>
+		<button onclick="life.slower()" id="paint">Slower</button>
+		<button onclick="life.faster()" id="paint">Faster</button>
+		<button onclick="life.toggle_paint()" id="paint">Paint On</button>
+	</div>
+	<script>
+	var life = Life(640, 480, 10);
+	life.start();
+	</script>
+</body>
+</html>

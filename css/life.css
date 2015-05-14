@@ -1,0 +1,17 @@
+body {
+	background-color: white;
+	text-align: center;
+}
+
+#game {
+	width: 660px;
+	background-color: #DDDDDD;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	border-radius: 10px;
+}
+
+#life {
+	border: 1px solid black;
+}
